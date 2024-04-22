@@ -12,20 +12,70 @@
 
 <body>
   <div class="navbar">
-  <a href="index.html" id="link1">Home</a>
-  <a href="#about.html"id="link2">About Us</a>
+  <a href="./index.html" id="link1">Home</a>
+  <a href="./about.html"id="link2">About Us</a>
   <div class="dropdown">
     <button class="dropbtn">Science Programs
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#Chemestry.html"id="link3">Chemistry</a>
-      <a href="#Biology.html"id="link4">Biology</a>
+      <a href="./Chemistry.html"id="link3">Chemistry</a>
+      <a href="./Biology.html"id="link4">Biology</a>
     </div>
   </div>
 </div>
-  
+<h1>
+  <video autoplay muted loop id="myVideo" width="1150px">
+  <source src="dna.mp4" type="video/mp4">
+</video>
+</h1>
+
+<div class="content">
+  <h1>Biology</h1>
+  <p>Studying biology can help students gain a deeper appreciation for the natural world and prepare them for future academic and career pursuits. It also helps students develop critical thinking skills and understand important concepts such as genetics, evolution, and ecology. 
+</p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<h1>Biology programs available for low-income high school kids in Philadelphia.</h1>
+
+<div class="row">
+  <div class="column" style="background-color:#72d6f7;">
+    <h2>Penn Summer Science Academy</h2>
+    <p>The University of Pennsylvania offers the Penn Summer Science Academy, which provides hands-on laboratory experience in biology and other sciences. The program is free for students who qualify for free or reduced lunch.
+</p>
+<img src="Upenn.png" height="250px">
+  </div>
+  <div class="column" style="background-color:#02a4f5;">
+    <h2>Philadelphia Science Festival</h2>
+    <p>The Philadelphia Science Festival hosts a variety of events and activities throughout the city to promote science education. The festival includes workshops, exhibits, and demonstrations in biology and other sciences, and is free and open to the public.
+</p>
+<img src="festival.png" height="230px">
+  </div>
+  <div class="column" style="background-color:#0263a3;">
+    <h2>Franklin Institute</h2>
+    <p>The Franklin Institute offers several science programs for high school students, including the Discovery Camp and STEM Scholars Program. These programs provide opportunities for students to explore biology and other sciences through hands-on learning experiences and mentorship from professionals in the field.
+</p>
+<img src="nof.png" height="210px">
+  </div>
+</div>
 
 </body>
 <script src="index.js"></script>
 </html>
+
